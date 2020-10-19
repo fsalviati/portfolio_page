@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fernando Salviati - Web Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar-example2" class="navbar navbar-dark navbar-expand-lg fixed-top">
+    <a class="navbar-brand" id="navBrand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#mdo">About Me</a>
+        <a class="nav-link" href="#ptf">Portfolio</a>
+        <a class="nav-link" href="#cnt">Contact</a>
+      </div>
+    </div>
+  </nav>
+<!-- First Image Parallax -->
+<div class="image imageProp"> 
+     <h1 id="headingTop"><span class="retangleHeading">Fernando Salviati</span></h1>
+</div>
+
+<!--About Me--->
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+ <div id="mdo">
+  <div class="about-me"   id ="SectionAbout">
+    <h2>About Me</h2>
+        <hr>
+    <div class="row">
+        <p style="text-indent: 2em; font-size: 165%;">  Hello, my name is <span class="accent-text">Fernando Salviati</span> and this is a website developed by me with the purpose of being used as a portfolio and show the skills that I have been studying regarding my passion and commitment in Web Development. Feel free to contact me for a deeper discussion about my skill set. Thank you!</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-sm-6"> 
+            <div>
+                <img src="images/circle-cropped.png" class="photoMe">
+            </div>
+        </div>
+        <!-- Hide this text on small devices -->
+        <div class="col-lg-8 col-sm-6 my-auto d-none d-lg-block" id="divTxt">
+            <p id="photoTxt"><span class="accent-text">Competences:</span>
+            <br><span class="txtInsideAboutMe">Html5, JavaScript, jQuery, AJAX, CSS3, Bootstrap, GIT, Oracle Database(pl/sql);</span> 
+            </p>
+            <p id="photoTxt"><span class="accent-text">Education:</span>
+              <br><span class="txtInsideAboutMe">-Bachelor of Information Systems</span> 
+              <br><span class="txtInsideAboutMe">-Master's Degree in Cloud Computing</span> 
+            </p>
+        </div>
+    </div>
+  </div>   
+</div>
+<!--End About Me--->
+
+<!-- Portfolio Section- -->
+<!-- Second Image Parallax -->
+<div id = "ptf" class="image2 imageProp"> 
+  <h1 id="headingMid">Portfolio</h1>
+</div>
+<!-- Starting the Protfolio Grid Gallery -->
+<section class="section-padding" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="title text-center">
+          Let's <span class="accent-text">See</span> My Work
+        </h2>
+      </div>
+    </div>
+
+    <!-- Image grid -->
+    <div class="container">
+      <div id="my-grid" class="grid-padding">
+        <div class="row">
+
+          <!-- First Column -->
+          <div class="col-sm-4">
+            <div class="row">
+              <img src="images/img1.jpg" class="fit-image" onclick="openModal();currentSlide(1)">
+            </div>
+            <div class="row">
+              <img src="images/img2.jpg" class="fit-image" onclick="openModal();currentSlide(2)">
+            </div>
+            <div class="row">
+              <img src="images/img3.jpg" class="fit-image" onclick="openModal();currentSlide(3)">
+            </div>
+          </div>
+
+          <!-- Second Column -->
+          <div class="col-sm-4">
+            <div class="row">
+              <img src="images/img4.jpg" class="fit-image" onclick="openModal();currentSlide(4)">
+            </div>
+            <div class="row">
+              <img src="images/img5.jpg" class="fit-image" onclick="openModal();currentSlide(5)">
+            </div>
+            <div class="row">
+              <img src="images/img6.jpg" class="fit-image" onclick="openModal();currentSlide(6)">
+            </div>
+          </div>
+
+          <!-- Third Column  -->
+          <div class="col-sm-4">
+            <div class="row">
+              <img src="images/img7.jpg" class="fit-image" onclick="openModal();currentSlide(7)">
+            </div>
+            <div class="row">
+              <img src="images/img8.jpg" class="fit-image" onclick="openModal();currentSlide(8)">
+            </div>
+            <div class="row">
+              <img src="images/img9.jpg" class="fit-image" onclick="openModal();currentSlide(9)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="images/img10.jpg" class="fit-image" onclick="openModal();currentSlide(10)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br><br>
+
+<!-- Contact Section -->
+<!-- Third image parallax -->
+  <div id="cnt" class="image3 imageProp"> 
+    <h1 id="headingMid">Contact</h1>
+  </div>
+  <section>
+    <div class="container">
+      <div  class="row">
+        <div id="columnContact" class="col-lg-6">
+          <form action="mailto:fernandosalviati@gmail.com" method="post" enctype="text/plain">
+            <input class="formElements" style="margin-right:12px;" placeholder="Name" type="text" name="name">
+            <input class="formElements" placeholder="Email" type="text" name="mail"><br><br>
+            <textarea class="formElements" id="subject" name="subject" placeholder="Write something.."></textarea>
+            <br><br>
+            <input class="btn btn-primary btn-md" type="submit" value="Send">
+            <input class="btn btn-primary btn-md" style="margin-left:8px;" type="reset" value="Reset">
+          </form>
+        </div>
+        <div id="phoneColumn" class="col-lg-6">
+          <i class="fa fa-phone" style="font-size:24px">  Phone: +61 (03) 411 802 487</i>
+          <i class="fa fa-envelope" style="font-size:24px">  Email: fernandosalviati@gmail.com</i>
+          <i class="fa fa-map-marker" style="font-size:24px">  Melbourne, Australia</i><br>
+          <br
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for full screen -->
+  <div id="my-modal" class="modal">
+    <!-- close button -->
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="my-slides">
+        <div class="numbertext">1 / 10</div>
+        <img src="images/img1.jpg" class="landscape-image">
+      </div>
+
+      <div class="my-slides">
+        <div class="numbertext">2 / 10</div>
+        <img src="images/img2.jpg" class="portrait-image">
+      </div>
+
+      <div class="my-slides">
+        <div class="numbertext">3 / 10</div>
+        <img src="images/img3.jpg" class="landscape-image">
+      </div>
+
+      <div class="my-slides">
+        <div class="numbertext">4 / 10</div>
+        <img src="images/img4.jpg" class="landscape-image">
+      </div>
+
+      <div class="my-slides">
+        <div class="numbertext">5 / 10</div>
+        <img src="images/img5.jpg" class="landscape-image">
+      </div>
+
+      <div class="my-slides">
+        <div class="numbertext">6 / 10</div>
+        <img src="images/img6.jpg" class="portrait-image">
+      </div>
+
+      <div class="my-slides">
+        <div class="numbertext">7 / 10</div>
+        <img src="images/img7.jpg" class="portrait-image">
+      </div>
+
+      <div class="my-slides">
+        <div class="numbertext">8 / 10</div>
+        <img src="images/img8.jpg" class="landscape-image">
+      </div>
+
+      <div class="my-slides">
+        <div class="numbertext">9 / 10</div>
+        <img src="images/img9.jpg" class="landscape-image">
+      </div>
+
+      <div class="my-slides">
+        <div class="numbertext">10 / 10</div>
+        <img src="images/img10.jpg" class="landscape-image">
+      </div>
+
+      <!-- next and previous buttons -->
+      <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+      <!-- <a class="prev buttonArrow" id="buttonArrow1"  onclick="changeSlides(-1)">&#10094;</a> -->
+      <a class="next" onclick="changeSlides(1)">&#10095;</a>
+    <!-- </div> -->
+   </div> <!--End Modal Div -->
+</div>  <!--Scroll Div--->
+
+<!-- Footer -->
+<footer class="footer">
+    <a href="https://www.linkedin.com/in/fernando-salviati-b44726145/" id="linkedinIcon" class="fa fa-linkedin"></a>
+    <a href="https://github.com/fsalviati" id="gitIcon" class="fa fa-github"></a>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Fernando Salviati</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+  </body>
+</html>

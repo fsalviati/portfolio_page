@@ -1,0 +1,287 @@
+body, html
+{
+    width: 100%;
+    height: 100%;
+    background-color:#F0F1E9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Parallax Images */
+.image {
+  background: url(images/background_header.jpg) no-repeat center center; 
+}
+.image2 {
+  background: url(images/image_portfolio.jpg) no-repeat center center;
+  max-height: 320px; 
+}
+.image3 {
+  background: url(images/image_contact.jpg) no-repeat center center;
+  max-height: 320px; 
+  margin-top: auto;
+}
+
+/* Parallax Effect */
+.imageProp {
+  background-size: cover;
+  height: 480px;
+  margin-top: -20px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.retangleHeading{
+  background-color: rgba(129, 126, 126, 0.4);
+  border: none;
+}  
+
+#headingTop {
+     color: white;
+     text-align: center;
+     padding-top: 150px;
+     letter-spacing: 3px;
+}
+p {
+    text-align: center;
+    padding: 20px 60px;
+}   
+
+/* Navbar Section */
+.navbar {
+ background-color: transparent;
+ border: none;
+ z-index: 100;
+ transition: background-color 1s ease 0s;
+}
+.navbar-nav a {
+  color: rgb(189, 178, 178);
+} 
+.navbar-nav a:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.04);
+}
+#navBrand{
+  opacity: 0.01;
+  color: rgb(189, 178, 178);
+}
+#navBrand:hover{
+  transform: scale(1.1);
+}
+.accent-text {
+  font-size: 33px;
+  font-family: 'Courgette', cursive;
+  color: #a01414; 
+}
+.photoMe{
+  height: 330px;
+  margin-left: 40px;
+}
+.about-me{
+  color: black;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+}
+.about-me hr{
+    width: 70px;
+    margin-bottom: 30px;
+    border-color: black;
+}
+#photoTxt{
+  text-align: left;
+  font-size: 28px;
+}
+#divTxt{
+  height: 380px;
+}
+.txtInsideAboutMe{
+  font-size: 20px;
+  text-align: left;
+}
+#ulAboutMe {
+  list-style: none;
+}
+@media (max-width: 992px) {
+  .navbar-collapse
+    {
+        background-color:#1C1C1B;
+    }
+}
+
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+ background-color: #1C1C1B;
+ transition: background-color 0.5s ease 0s;
+ box-shadow: 0 0 4px black;
+ opacity: 1.0;
+}
+
+/* Porfolio Section */
+#headingMid {
+  color: white;
+  text-align: center;
+  padding-top: 120px;
+  letter-spacing: 3px;
+}
+.fit-image{
+  width: 100%;
+  height: 100%;
+}
+.title{
+  font-size: 30px;
+  margin: 50px 0;
+}
+.grid-padding{
+  padding: 0 8px;
+}
+.grid-padding img{
+  margin-bottom: 15px;
+  transition: 0.8s ease;
+}
+.grid-padding img:hover{
+  box-shadow: 0 10px 40px 0 rgba(0,0,0,0.5);
+  transition: 0.8s ease;
+  transform: scale(1.06);
+  filter: grayscale(100%);
+}
+.col-sm-4{
+  padding-right: 30px;
+}
+.col-md-12{
+  padding-right: 30px;
+}
+
+/* Modal Photos Section */
+.modal{
+  display: none;
+  position: fixed; 
+  z-index: 1;
+  padding: 5px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9)
+
+}
+.modal-content{
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 85%;  
+  max-width: 1200px;
+  border: none;
+  background-color: transparent;
+}
+.my-slides{
+  text-align: center;
+}
+.portrait-image{
+  height: 98vh;
+}
+.landscape-image{
+  width: 76vw;
+}
+/* Close and Arrows buttons */
+.close{
+  color: #FFF;
+  position: absolute;
+  right: 25px;
+  font-size: 48px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.close:hover, .close:focus{
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #FFF !important;
+  font-weight: bold;
+  font-size: 3em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next:hover, .prev:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+/* Numbertext (1 - 10) */
+.numbertext{
+  color: grey;
+  font-size: 18px;
+  font-family: Lato, sans-serif;
+  padding: 8px 50px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+
+/* Contact Section */
+#columnContact{
+  padding-top: 40px;
+}
+#subject{
+  height: 170px; 
+  width: 461px;
+}
+.formElements{
+  background-color:#e5e6de;
+  border: 1px black solid;
+  padding-right: 1%;
+  padding-left: 1%;
+  border-radius: 4px;
+}
+.formElements:hover{
+  background: lightgrey;  
+}
+@media only screen and (max-width: 500px) {
+  .formElements {
+   width: 100%;
+   margin-top: 10px;
+  }
+ }
+
+#phoneColumn{
+  padding-top: 45px;
+  line-height: 3.1;
+  text-align: left;
+}
+
+/* Footer Section */
+.footer {
+  margin-top: 40px;
+  padding-top: 10px;
+  width: 100%;
+  background-color: #1C1C1B;
+  color: white;
+  text-align: center;
+}
+#linkedinIcon{
+  text-decoration: none;
+  font-size:52px
+}
+#gitIcon{
+  font-size:52px;
+  color:white;
+  margin-left:13px;
+  text-decoration: none;
+}
+#gitIcon:hover{
+  color:rgb(211, 218, 122);
+}
