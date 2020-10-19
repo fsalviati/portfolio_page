@@ -4,4 +4,4 @@
 ## Screenshot
 
 ![Screenshot](images/screenshot.png)
-![Screenshot](images/screenshot2.png)
+![Screenshot](images/screenshot3.png)
